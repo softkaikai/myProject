@@ -1,0 +1,74 @@
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img{margin:0;padding:0;}
+a{text-decoration:none;}
+ul,li{list-style:none;}
+body{font-size:12px;font-family:"微软雅黑";}
+img{border:0;vertical-align: bottom;}
+
+body {
+    background: #E9FAFF;
+}
+.container-bg {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+}
+.container-bg:after{content:".";clear:both;display:block;height:0;overflow:hidden;visibility:hidden;}
+.container {
+    width: 1200px;
+    height: auto;
+    border: 1px solid #54daff;
+    margin: 0 auto;
+}
+.container:after{content:".";clear:both;display:block;height:0;overflow:hidden;visibility:hidden;}
+.book-name {
+    width: 1180px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    padding-left: 20px;
+    border-bottom: 1px dashed #54daff;
+}
+.book-top {
+    width: 1200px;
+    height: 120px;
+    /*border-bottom: 1px dashed #54daff;*/
+}
+.chapter {
+    width: 1200px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    font-size: 30px;
+}
+.changepage-top {
+    width: 1200px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+    /*border-top: 1px dashed #54daff;*/
+}
+.changepage-top a {
+    color: #000;
+    padding: 0 10px;
+}
+#num {
+    width: 30px;
+    height: 20px;
+    text-align: center;
+}
+.changepage-top a:hover {
+    color: red;
+}
+.content {
+    width: 1200px;
+    height: auto;
+    min-height: 900px;
+    font-size: 20px;
+    border-bottom: 1px dashed #54daff;
+    border-top: 1px dashed #54daff;
+}
+.content:after{content:".";clear:both;display:block;height:0;overflow:hidden;visibility:hidden;}
+
+
+

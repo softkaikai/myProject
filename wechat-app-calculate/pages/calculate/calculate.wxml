@@ -1,0 +1,39 @@
+<view class="container">
+    <view class="panel-top">
+        <view class="screen">{{screenData}}</view>
+    </view>
+    <view class="panel-bottom">
+        <view class="btn-groups">
+            <view class="item bg-orange" bindtap="tap" id="{{idc}}">C</view>
+            <view class="item bg-orange" bindtap="tap" id="{{idb}}">←</view>
+            <view class="item bg-orange" bindtap="tap" id="{{idh}}"><icon type="search" color="white" /></view>
+            <view class="item bg-orange" bindtap="tap" id="{{idadd}}">+</view>
+        </view>
+        <view class="btn-groups">
+            <view class="item bg-purple" bindtap="tap" id="{{id9}}">9</view>
+            <view class="item bg-purple" bindtap="tap" id="{{id8}}">8</view>
+            <view class="item bg-purple" bindtap="tap" id="{{id7}}">7</view>
+            <view class="item bg-orange" bindtap="tap" id="{{idminus}}">-</view>
+        </view>
+        <view class="btn-groups">
+            <view class="item bg-purple" bindtap="tap" id="{{id6}}">6</view>
+            <view class="item bg-purple" bindtap="tap" id="{{id5}}">5</view>
+            <view class="item bg-purple" bindtap="tap" id="{{id4}}">4</view>
+            <view class="item bg-orange" bindtap="tap" id="{{idmul}}">X</view>
+        </view>
+        <view class="btn-groups">
+            <view class="item bg-purple" bindtap="tap" id="{{id3}}">3</view>
+            <view class="item bg-purple" bindtap="tap" id="{{id2}}">2</view>
+            <view class="item bg-purple" bindtap="tap" id="{{id1}}">1</view>
+            <view class="item bg-orange" bindtap="tap" id="{{iddivi}}">/</view>
+        </view>
+        <view class="btn-groups">
+            <view class="item zero bg-purple" bindtap="tap" id="{{id0}}">0</view>
+            <view class="item item-bottom">
+                <view class="item bg-purple" bindtap="tap" id="{{iddian}}">.</view>
+                <view class="item no-right-margin bg-orange" bindtap="tap" id="{{idequal}}">=</view>
+            </view>
+        </view>
+    
+    </view>
+</view>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Realchat</title>
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <script src="/js/jquery-3.1.0.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <!--这段代码:/socket.io/socket.io.js由服务器端socket.io类库提供,不需要在客户端实际放置一个socket.io.js文件.-->
+    <script src="/js/index.js"></script>
+</head>
+<body>
+    <div class="box">
+        <p class="title">
+            Realchat:)
+            <span>
+                当前在线人数为：<i class="onlineCount">0</i>&nbsp;&nbsp;&nbsp;&nbsp;
+                当前用户：<b class="username"></b>
+            </span>
+        </p>
+        <div class="content">
+
+        </div>
+        <div class="operaters">
+            <input type="color" name="color" id="color" />
+            <input type="button" class="emoji" value="emoji">
+            <input type="button" class="imageBtn" value="image">
+            <input type="file" class="image">
+            <input type="button" class="clear" value="clear">
+            <div class="wrap_emoji"></div>
+        </div>
+        <div class="write-msg">
+            <textarea name="" id="msg"></textarea>
+            <button type="button" class="send">SEND</button>
+        </div>
+        <div class="shadow">
+            <p>Please set your nickname 0 0!</p>
+            <input type="text" name="nickname" id="nickname">
+            <button type="button" class="login">OK</button>
+        </div>
+    </div>
+</body>
+</html>

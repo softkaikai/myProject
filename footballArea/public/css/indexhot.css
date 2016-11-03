@@ -1,0 +1,113 @@
+footer {
+    border: 0;
+}
+.content {
+    width: 100%;
+    position: absolute;
+    top: 2.2rem;
+    bottom: 2.2rem;
+    overflow: hidden;
+}
+.swiper-container {
+    overflow: visible;
+    /*height: 100rem;*/
+}
+.swiper-container:after{content:".";clear:both;display:block;height:0;overflow:hidden;visibility:hidden;}
+.swiper-pagination {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: #fff;
+    height: 1.75rem;
+    width: 100%;
+    display: box;
+    display: -webkit-box;
+    display: -moz-box;
+    color: #666;
+}
+.swiper-container .swiper-pagination .swiper-pagination-bullet {
+    border-radius: 0;
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 0;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    height: 1.625rem;
+    line-height: 1.625rem;
+    border-bottom: .125rem solid #999;
+    color: #666;
+    font-size: .65rem;
+    text-align: center;
+    background: #fff;
+    opacity: 1;
+}
+.swiper-container .swiper-pagination .swiper-pagination-bullet-active {
+    color: #0dc441;
+    background: #fff;
+    border-bottom: .125rem solid #0dc441;
+}
+.swiper-container .swiper-wrapper {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 1.75rem;
+    /*height: auto;*/
+    /*overflow: hidden;*/
+}
+.swiper-container .swiper-wrapper .swiper-slide {
+    height: auto;
+    width: 100%;
+}
+.fall {
+    width: 100%;
+    display: box;
+    display: -webkit-box;
+    display: -moz-box;
+}
+.fallcol {
+    width: 0;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+}
+.fallL {
+    margin-right: .25rem;
+}
+.fall-dl {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #999;
+    margin-top: .25rem;
+    height: 9.35rem;
+    display: box;
+    display: -webkit-box;
+    display: -moz-box;
+    -moz-box-orient: block-axis;
+    -webkit-box-orient: block-axis;
+}
+.fall-dl img {
+    width: 100%;
+}
+.fall-dl dt {
+    height: 0;
+    -webkit-box-flex: 315;
+    -moz-box-flex: 315;
+    border-bottom: 1px solid #999;
+    overflow: hidden;
+}
+.fall-dl dd {
+    height: 0;
+    -webkit-box-flex: 58;
+    -moz-box-flex: 58;
+    color: #333;
+    font-size: .65rem;
+    /*text-align: center;*/
+    display: box;
+    display: -webkit-box;
+    display: -moz-box;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+}

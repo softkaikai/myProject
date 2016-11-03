@@ -1,0 +1,126 @@
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img{margin:0;padding:0;}
+a{text-decoration:none;}
+ul,li{list-style:none;}
+body{font-size:12px;font-family:"微软雅黑";}
+img{border:0;vertical-align: bottom;}
+
+body {
+    background: #000;
+}
+
+.box {
+    width: 600px;
+    height: 500px;
+    background: #eee;
+    margin: 50px auto;
+    position: relative;
+}
+.title {
+    height: 100px;
+    font-size: 40px;
+    font-weight: bold;
+    position: relative;
+}
+.title span {
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.title i {
+    font-style: normal;
+    color: red;
+}
+.title b {
+    font-weight: normal;
+    font-style: normal;
+    color: red;
+}
+.content {
+    height: 250px;
+    width: 580px;
+    margin-left: 10px;
+    background: #fff;
+    overflow: auto;
+}
+.content p {
+    font-size: 20px;
+    width: 99%;
+    height: auto;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.content p:after{content:".";clear:both;display:block;height:0;overflow:hidden;visibility:hidden;}
+
+.content p span {
+
+    color: #999;
+}
+.content p img {
+    width: auto;
+}
+.operaters {
+    height: 30px;
+    width: 580px;
+    margin-left: 10px;
+    position: relative;
+}
+.wrap_emoji {
+    width: 580px;
+    height: 250px;
+    display: none;
+    position: absolute;
+    left: 0;
+    bottom: 100%;
+    background: grey;
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow: auto;
+}
+.wrap_emoji img {
+    width: 40px;
+    height: 40px;
+    margin: 3px 5px;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+.wrap_emoji:after{content:".";clear:both;display:block;height:0;overflow:hidden;visibility:hidden;}
+
+.write-msg {
+    height: 106px;
+    margin-left: 10px;
+    width: 580px;
+}
+#msg {
+    width: 510px;
+    height: 100px;
+    float: left;
+    font-size: 20px;
+}
+.image {
+    display: none;
+}
+.send {
+    width: 50px;
+    height: 106px;
+    float: right;
+}
+
+
+
+
+.shadow {
+    width: 450px;
+    height: 280px;
+    background: #000;
+    opacity: .5;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 220px 0 0 150px;
+}

@@ -1,0 +1,18 @@
+<view>
+    <view class="title-container">
+        <view class="author">
+            <image class="author-img" src="{{person.author.avatar_url}}"></image>
+            <view class="author-msg">
+                <text>{{person.author.loginname + tab}}</text>
+            
+                <text>{{person.create_at}}</text>
+            </view>
+            
+        </view>
+        <view>
+            <text>{{person.title}}</text>
+            <text>{{person.reply_count}}</text>
+        </view>
+       
+    </view>
+</view>

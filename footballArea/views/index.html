@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+    maximum-scale=1,minimum-scale=1,
+    initial-scale=1,user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="lib/swiper-3.3.1.min.css">
+    <link rel="stylesheet" href="css/header2.css">
+    <link rel="stylesheet" href="font/iconfont/iconfont.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+<body>
+<div class="container">
+    {{> header2}}
+    <div class="wrapper">
+        <ul>
+            <li>
+                <div class="top">
+                    <div class="image li-div">
+                        <img src="img/11.jpg" alt="图片无法显示">
+                    </div>
+                    <div class="intro li-div">
+                        <i class="nickname">我叫小萌</i>
+                        <i class="signature">天不怕，地不怕，啥子都不怕。</i>
+                    </div>
+                    <div class="concern li-div">
+                        <span>
+                            324323 <i class="fa fa-music"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="middle">
+                    <img src="img/2.jpg" alt="图片无法显示">
+                </div>
+                <div class="bottom"><span>小丸子啊小丸子</span></div>
+            </li>
+            <li>
+                <div class="top">
+                    <div class="image li-div">
+                        <img src="img/11.jpg" alt="图片无法显示">
+                    </div>
+                    <div class="intro li-div">
+                        <i class="nickname">我叫小萌</i>
+                        <i class="signature">天不怕，地不怕，啥子都不怕。</i>
+                    </div>
+                    <div class="concern li-div">
+                        <span>
+                            324323 <i class="fa fa-music"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="middle">
+                    <img src="img/2.jpg" alt="图片无法显示">
+                </div>
+                <div class="bottom"><span>小丸子啊小丸子</span></div>
+            </li>
+            <li>
+                <div class="top">
+                    <div class="image li-div">
+                        <img src="img/11.jpg" alt="图片无法显示">
+                    </div>
+                    <div class="intro li-div">
+                        <i class="nickname">我叫小萌</i>
+                        <i class="signature">天不怕，地不怕，啥子都不怕。</i>
+                    </div>
+                    <div class="concern li-div">
+                        <span>
+                            324323 <i class="fa fa-music"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="middle">
+                    <img src="img/2.jpg" alt="图片无法显示">
+                </div>
+                <div class="bottom"><span>小丸子啊小丸子</span></div>
+            </li>
+        </ul>
+    </div>
+    {{> footer}}
+</div>
+
+
+<script src="lib/iscroll-min.js"></script>
+<script src="lib/swiper-3.3.1.min.js"></script>
+<script src="lib/zepto.min.js"></script>
+<script src="js/adaption.js"></script>
+<script>
+    var scroll = new IScroll('.wrapper', {
+        mouseWheel: true,
+        scrollbars: false,
+        click: true
+    })
+</script>
+</body>
+</html>

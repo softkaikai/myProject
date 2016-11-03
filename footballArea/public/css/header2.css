@@ -1,0 +1,36 @@
+header {
+    width: 100%;
+    height: 2.2rem;
+    background: #0dc441;
+    line-height: 2.2rem;
+    text-align: center;
+    display: box;
+    display: -webkit-box;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+
+}
+.header-wrapper {
+    width: 5.85rem;
+    height: 1.2rem;
+    background: #3dd067;
+    border-radius: .6rem;
+    display: box;
+    display: -webkit-box;
+    overflow: hidden;
+}
+.header-wrapper a {
+    color: #fff;
+}
+.header-wrapper div {
+    width: 0;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    color: #fff;
+    font-size: .5rem;
+    height: 1.2rem;
+    line-height: 1.2rem;
+}
+.header-wrapper .header-active {
+    background: #64d985;
+}

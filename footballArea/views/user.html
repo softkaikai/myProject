@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+    maximum-scale=1,minimum-scale=1,
+    initial-scale=1,user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="lib/swiper-3.3.1.min.css">
+    <link rel="stylesheet" href="css/header1.css">
+    <link rel="stylesheet" href="font/iconfont/iconfont.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/user.css">
+</head>
+<body>
+<div class="container">
+    {{> header1}}
+    <div class="wrapper">
+        <ul>
+            <li>
+                <div class="top">
+                    <div class="image li-div">
+                        <img src="img/11.jpg" alt="图片无法显示">
+                    </div>
+                    <div class="intro li-div">
+                        <i class="nickname">我叫小萌</i>
+                        <i class="signature">天不怕，地不怕，啥子都不怕。</i>
+                    </div>
+                    <div class="concern li-div">
+
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="swiper-container">
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slide1">
+                        </div>
+                        <div class="swiper-slide slide2">2</div>
+                        <div class="swiper-slide slide3">3</div>
+                    </div>
+
+                </div>
+            </li>
+        </ul>
+    </div>
+    {{> footer}}
+</div>
+
+<script src="lib/iscroll-min.js"></script>
+<script src="lib/swiper-3.3.1.min.js"></script>
+<script src="lib/zepto.min.js"></script>
+<script src="js/adaption.js"></script>
+
+<script>
+    var scroll = new IScroll('.wrapper', {
+        mouseWheel: true,
+        scrollbars: true,
+        click: true
+    });
+    var arr = ['照片','关注','粉丝'];
+    var arrNum = [1,3,8];
+    var swiper = new Swiper('.swiper-container', {
+//        autoplay: 1500,
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        loop: true,
+        paginationBulletRender: function (index, className) {
+            return '<span class="' + className + '">' + arr[index] + '(' + arrNum[index] + ')' + '</span>';
+        }
+    });
+
+    var getPic = function() {
+        $.ajax({
+            url:'/getPic',
+            type: 'get',
+            dataType: 'json',
+            success: function(data) {
+                console.log(data);
+                $.each(data, function(index, element) {
+                    var $pic = $('<img class="picture" src="'+ element.url +'" alt="图片无法显示">');
+                    $('.slide1').append($pic);
+                });
+                $('.slide1 img').last()[0].onload = function() {
+                    console.log(11);
+                    scroll.refresh();
+                };
+            },
+            error: function(err) {
+                console.log(err);
+            }
+        });
+    };
+    getPic();
+</script>
+</body>
+</html>
