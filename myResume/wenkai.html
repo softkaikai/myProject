@@ -1,0 +1,565 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0,
+maximum-scale=1,minimum-scale=1,
+user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="format-detection" content="email=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+<link rel="stylesheet" type="text/css" href="css/animate.min.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="css/mystyle.css">
+
+<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/swiper.jquery.min.js"></script>
+<script src="js/piechart-script.js"></script>
+
+<title>WENKAI PERSONAL WEBSITE</title>
+
+</head>
+
+<body>
+  <div id="menu nav container">
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar" aria-expanded="false">
+            <!--<span class="sr-only">Toggle navigation</span>-->
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand site__title" href="#">WEN KAI</a>
+        </div>
+    
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-navbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#basics">BASICS</a></li>
+            <li><a href="#interest">INTEREST</a></li>
+            <li><a href="#experience">EXPERIENCE</a></li>
+            <li><a href="#profession">PROFESSION</a></li>
+            <!--<li><a href="#software">SOFTWARE</a></li>-->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">联系方式 <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span>&nbsp;wechat：18380448902</a></li>
+                <!--<li><a href="#"><span class="glyphicon glyphicon-bookmark"></span>&nbsp;loveyaozhong@163.com</a></li>-->
+                <li><a href="#"><span class="glyphicon glyphicon-envelope"></span>&nbsp;smallsharkboy110@gmail.com</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#"><span class="glyphicon glyphicon-phone"></span>&nbsp;18380448902</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+  </div>
+
+<!--home start-->
+  <section id="home">
+    <div class="headerLine">
+    <div class="container">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+        
+        <!--图片1-->
+          <div class="swiper-slide slide-control">
+            <ul class="slides-container1 text-center" style="margin: 0px; padding: 0px; list-style: none; height: 100%;">
+              <li style="display: block; overflow: hidden; height: 100%; width: auto; top: 0px; z-index: 2; opacity: 1;">
+                 <div class="slide-text">
+                   <span></span>
+                   <br>
+                 </div>
+                 <div class="slide-filter"></div>
+                 <!--<img src="images/slide-1.jpg" class="up-translate" style="left:-56px;top:-100px;" alt="first">-->
+                </li>
+              </ul>
+          </div>
+          
+          <!--图片2-->
+          <div class="swiper-slide slide-control">
+            <ul class="slides-container2 text-center" style="margin: 0px; padding: 0px; list-style: none; height: 100%;">
+              <li style="display: block; overflow: hidden; height: 100%; width: auto; top: 0px; z-index: 2; opacity: 1;">
+                 <div class="slide-text">
+                   <span>努力的人运气都不会太差,小伙子，努力吧</span>
+                   <br>
+                 </div>
+                 <div class="slide-filter"></div>
+                 <img src="images/slide-2.jpg" class="up-translate" alt="first">
+                </li>
+              </ul>
+          </div>
+          
+         <!--图片3-->
+          <div class="swiper-slide slide-control">
+            <ul class="slides-container3 text-center" style="margin: 0px; padding: 0px; list-style: none; height: 100%;">
+              <li style="display: block; overflow: hidden; height: 100%; width: auto; top: 0px; z-index: 2; opacity: 1;">
+                 <div class="slide-text">
+                   <span>没有雨伞的孩子就要努力向前奔跑</span>
+                   <br>
+                 </div>
+                 <div class="slide-filter"></div>
+                 <img src="images/slide-3.jpg" class="up-translate" alt="first">
+                </li>
+              </ul>
+          </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <script> 
+      var mySwiper = new Swiper('.swiper-container', {
+          autoplay: 5000,
+		  prevButton:'.swiper-button-prev',
+		  nextButton:'.swiper-button-next',
+		  pagination : '.swiper-pagination',paginationHide :true,
+		  roundLengths : true,
+		  loop:true,
+		  slideToClickedSlide:true,
+		  autoplayDisableOnInteraction : true
+      })
+      </script>
+     </div>
+     </div>
+  </section>
+  
+<!--basics start-->
+  <section id="basics">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="header-content">
+              <h2>基本信息</h2>
+              <h3>朝着目标一直奔跑，我为自己带盐</h3>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="row">
+             <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="basics">
+                        <div class="icon-holder">
+                            <i class="fa fa-rocket"></i>
+                        </div>
+                        <h3 class="heading">照片</h3>
+                        <div class="description pic-myself"><img src="images/mao.jpg"></div>
+                        <p class="description">平和而执着 谦虚而无畏</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="basics">
+                       <div class="icon-holder">
+                          <i class="fa fa-graduation-cap"></i>
+                        </div>
+                        <h3 class="heading">学历-专业</h3>
+                        <p class="description"><i class="fa fa-home"></i>&nbsp;成都信息工程大学<br>通信工程（本科）</p>
+                      </div>
+                    </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="basics">
+                        <div class="icon-holder">
+                            <i class="fa fa-venus-mars"></i>
+                        </div>
+                        <h3 class="heading">性别年龄</h3>
+                        <p class="description"><i class="fa fa-mars"></i>&nbsp;&nbsp;男<br>23/1993.10<br></p>
+                </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="basics">
+                        <div class="icon-holder">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <h3 class="heading">联系方式</h3>
+<!--                        <p class="description"><br><br><br></p>-->                        
+                        <div class="list-group description" style="text-align: left;top:-24px; position:relative;">
+                          <a class="list-group-item" href="#"><span class="glyphicon glyphicon-phone"></span></i>&nbsp; 18380448902</a>
+                          <a class="list-group-item" href="mailto:1047336370@qq.com"><i class="fa fa-qq fa-fw"></i>&nbsp; 282748212</a>
+                          <a class="list-group-item" href="mailto:loveyaozhong@163.com"><i class="fa fa-envelope fa-fw"></i>&nbsp; smallsharkboy110@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="basics">
+                        <div class="icon-holder">
+                            <i class="fa fa-paper-plane"></i>
+                        </div>
+                        <h3 class="heading">求职意向</h3>
+                        <p class="description">HTML5前端工程师</p>
+                </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="basics">
+                        <div class="icon-holder">
+                            <i class="fa fa-life-ring"></i>
+                        </div>
+                        <h3 class="heading">关于 我</h3>
+                        <p class="description" style="font-size:14px; color:#000; top:-16px; position:relative;">喜欢设计，常去设计类网站，是一个热情的boy；同时惊叹于代码创造的奇迹，又是一个充满活力的程序猿，希望成为一名真正的Coder；性格开朗、勤奋好学，喜欢接触并尝试新的事物。</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>                   
+      </div>
+    </div>
+  
+  
+  </section>
+<!--interest start-->
+  <section class="glyphicon-file gray" id="interest">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="header-content">
+              <h2>兴趣爱好</h2>
+              <h3>If you want a happy ending, that depends on where you stop your story.</h3>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+          <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item photoshop text-center" style="display: inline-block; opacity: 1;">
+              <a class="popup">
+                  <span class="project-hover">
+                     <span>Reading</span>
+                     </span>
+                  <img src="images/pic001.jpg" alt="interest-ps">
+               </a>
+            </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item movie text-center" style="display: inline-block; opacity: 1;">
+              <a class="popup">
+                  <span class="project-hover">
+                    <span>Coding</span>
+                  </span>
+                  <img src="images/surface.jpg" alt="interest-movie">
+              </a>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item design text-center" style="display: inline-block; opacity: 1;">
+              <a class="popup">
+                  <span class="project-hover">
+                    <span>Sport</span>
+                  </span>
+                  <img src="images/sport.jpg" alt="interest-design">
+              </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+<!--experience start-->
+  <section id="experience">
+    <div class="line line2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="header-content">
+              <h2>项目经验</h2>
+              <h3>If you want a happy ending, that depends on where you stop your story.</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="container">
+      <div class="row">
+          <div class="col-md-4 col-xs-12">
+              <div class="ex-pic">
+                  <img src="images/3-160G4143352.jpg">
+              </div>
+          </div>
+          <div class="col-md-8 col-xs-12">
+          
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-4 col-xs-12">
+              <div class="ex-pic">
+                  <img src="images/3-160G4143354.jpg">
+              </div>
+          </div>
+          <div class="col-md-8 col-xs-12">
+          
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-4 col-xs-12">
+              <div class="ex-pic">
+                  <img src="images/3-160G4143350.jpg">
+              </div>
+          </div>
+          <div class="col-md-8 col-xs-12">
+          
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-4 col-xs-12">
+              <div class="ex-pic">
+                  <img src="images/3-160G4143353.jpg">
+              </div>
+          </div>
+          <div class="col-md-8 col-xs-12">
+          
+          </div>
+      </div>
+    </div>
+  </section>
+  
+
+<!--software start-->
+  <section id="profession">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="header-content">
+              <h2>专业技能</h2>
+              <h3>If you want a happy ending, that depends on where you stop your story.</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <!--word-->
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="progB chart" data-percent="75" data-animate="3500">
+<!--         <div class="chart chart-content" style="top: 0px;">-->
+                <div class="percentage" data-percent="75">
+                  <span class="percent">75</span>
+                </div>
+<!--	        <canvas height="72" width="72"></canvas>
+              </div>-->
+              <!--<canvas height="72" width="72"></canvas>-->
+          </div>   
+          <div class="textP">
+              <h3>HTML/CSS/JavaScript</h3>
+              <p>能够熟练的使用上述技术，制作出符合W3C标准的页面。</p>
+          </div>
+        </div>
+        
+        <!--ppt-->
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="progB chart" data-percent="75" data-animate="3500">
+              <div class="percentage" data-percent="75">
+                <span class="percent">75</span>
+              </div>
+              <!--<canvas height="72" width="72"></canvas>-->
+          </div>   
+          <div class="textP">
+              <h3>jQuery/Ajax</h3>
+              <p>能够使用jQuery完成绝大部分交互逻辑，熟练使用Ajax完成前后端数据交互。</p>
+          </div>
+        </div>
+ 
+         <!--excel-->
+         <div class="col-md-3 col-sm-6 col-xs-12">
+           <div class="progB chart" data-percent="50" data-animate="3500">
+               <div class="percentage" data-percent="50">
+                 <span class="percent">50</span>
+               </div>
+               <!--<canvas height="72" width="72"></canvas>-->
+           </div>
+           <div class="textP">
+             <h3>AngularJS/vue.js/Bootstrap</h3>
+             <p>主流框架还是要熟悉熟悉，跟上产品开发没有问题。</p>
+           </div>
+         </div>
+         
+         <!--PS-->
+         <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="progB chart" data-percent="40" data-animate="3500">
+              <div class="percentage" data-percent="40">
+                <span class="percent">40</span>
+              </div>
+              <!--<canvas height="72" width="72"></canvas>-->
+          </div>   
+          <div class="textP">
+              <h3>PhotoShop</h3>
+              <p>恩。。。会各种切图，但不会P图</p>
+          </div>
+        </div>
+        <!--AI-->
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="progB chart" data-percent="77" data-animate="3500">
+              <div class="percentage" data-percent="77">
+                <span class="percent">77</span>
+              </div>
+              <!--<canvas height="72" width="72"></canvas>-->
+          </div>   
+          <div class="textP">
+              <h3>fontAwesome/iconfont</h3>
+              <p>移动端必备图库，开发必备。</p>
+          </div>
+        </div>
+        <!--PR-->
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="progB chart" data-percent="75" data-animate="3500">
+              <div class="percentage" data-percent="75">
+                <span class="percent">75</span>
+              </div>
+              <!--<canvas height="72" width="72"></canvas>-->
+          </div>   
+          <div class="textP">
+              <h3>zepto.js</h3>
+              <p>移动开发必备框架，恩。。。。？好像用了Angular/Vue.js就可以不用这货了。</p>
+          </div>
+        </div>
+        <!--Git-->
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="progB chart" data-percent="78" data-animate="3500">
+              <div class="percentage" data-percent="78">
+                <span class="percent">78</span>
+              </div>
+              <!--<canvas height="72" width="72"></canvas>-->
+          </div>   
+          <div class="textP">
+              <h3>Github/SVN</h3>
+              <p>你去面试的时候你敢说你不会这两个东西？给你个表情自己体会- -。</p>
+          </div>
+        </div>
+        <!--gulp前端构建工具-->
+          <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="progB chart" data-percent="65" data-animate="3500">
+                  <div class="percentage" data-percent="65">
+                      <span class="percent">65</span>
+                  </div>
+                  <!--<canvas height="72" width="72"></canvas>-->
+              </div>
+              <div class="textP">
+                  <h3>gulp/grunt</h3>
+                  <p>作为一名有逼格的程序员，构建工具还是要会那么一两个的，虽然grunt确实不怎么会。</p>
+              </div>
+          </div>
+            <!--nodejs/php-->
+          <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="progB chart" data-percent="60" data-animate="3500">
+                  <div class="percentage" data-percent="60">
+                      <span class="percent">60</span>
+                  </div>
+                  <!--<canvas height="72" width="72"></canvas>-->
+              </div>
+              <div class="textP">
+                  <h3>Node.js/PHP</h3>
+                  <p>Node.js，哎！真的是一把鼻涕一把泪的学上来的啊，虽然过程是痛苦，但至少结果是很好的，现在可以熟练的使用Node+express+MongoDB搭建一个小型全站，所以勉强打个50分吧。至于php嘛，熟悉基础语法，能够做一些简单的前端测试接口，打个20分吧。</p>
+              </div>
+          </div>
+            <!--微信-->
+          <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="progB chart" data-percent="65" data-animate="3500">
+                  <div class="percentage" data-percent="65">
+                      <span class="percent">65</span>
+                  </div>
+                  <!--<canvas height="72" width="72"></canvas>-->
+              </div>
+              <div class="textP">
+                  <h3>WeChat</h3>
+                  <p>微信场景、微信公众号、微信小程序一个都不能少。但是微信公众号和订阅号确实不熟，然而确实会。- -切，这不还不是不会吗。</p>
+              </div>
+          </div>
+        
+        <!--more-->
+        <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="progB chart" data-percent="100" data-animate="3500">
+                <div class="percentage" data-percent="100">
+                  <span class="percent">more…</span>
+                </div>
+                <canvas height="72" width="72"></canvas>
+            </div>
+            <div class="textP">
+            <h3>谢谢</h3>
+            <p>简单列举这些</p>
+            </div>
+        </div>
+    </div>
+   </div>
+ </section>
+<!--myself start-->
+  <section id="myself">
+    <div class="line lineBlack">
+    <div class="container">
+      <div class="row mg-tp-100 mg-bt-100">
+          <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="pic-desplay">
+                  <img src="images/3-160G4143352.jpg">
+              </div>
+          </div>
+          
+          <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="pic-desplay">
+                  <img src="images/3-160G4143354.jpg">
+              </div>
+          </div>
+          
+          <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="pic-desplay">
+                  <img src="images/3-160G4143350.jpg">
+              </div>
+          </div>
+          
+          <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="pic-desplay last">
+                  <img src="images/3-160G4143346.jpg">
+              </div>
+          </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <footer id="footer" class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 text-left copy">
+                <p>Copyright &copy; 2016 Bootstrap Resume Template. All Rights Reserved.</p>
+            </div>
+            <div class="col-md-6 text-right lm">
+				<ul id="lastMenu">
+					<li class="active"><a href="#home">HOME</a></li>
+					<li><a href="#basics">BASICS</a></li>
+					<li><a href="#interest">INTEREST</a></li>
+					<li><a href="#experience">EXPERIENCE</a></li>
+					<li><a href="#profession">PROFESSION</a></li>
+					<!--<li class="last"><a href="#software">SOFTWARE</a></li>-->
+				</ul>
+			</div>
+        </div>
+    </div>
+  </footer>
+  <div id="backtotop" style="display: block;" class="active">
+      <a class="to-top-btn sscroll" href="#"><i class="fa fa-angle-double-up"></i></a>
+  </div>
+  <script type="text/javascript">
+	jQuery(document).ready(function(){
+	  jQuery("#backtotop").backToTop();
+	  jQuery("#backtotop").click(function(){
+		  jQuery("body,html").animate({
+			  scrollTop: 0
+		  },700);
+		  return false
+		  });
+	});
+	(function($) {
+		$.fn.backToTop = function() {
+			var selectz = $(this);
+			selectz.hide();
+			$(window).scroll(function() {
+				if ($(this).scrollTop() > $(window).height()) {
+					selectz.fadeIn();
+				} else {
+					selectz.fadeOut();
+				}
+				
+			});
+		};
+	}(jQuery));
+  </script>
+</body>
+</html>
